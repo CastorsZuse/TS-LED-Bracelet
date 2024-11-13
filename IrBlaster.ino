@@ -28,7 +28,21 @@ const int IR_SEND_PIN = 5;
 const int debounceDelay = 50;
 int buttonState = 0;   
 
-
+void Rainbow();
+    IrSender.sendNEC(White, sCommand, sRepeats);
+    delay(500);
+    IrSender.sendNEC(Red, sCommand, sRepeats);
+      delay(500);
+    IrSender.sendNEC(Blue, sCommand, sRepeats);
+      delay(500);
+    IrSender.sendNEC(Green, sCommand, sRepeats);
+      delay(500);
+    IrSender.sendNEC(RedBlue, sCommand, sRepeats);
+      delay(500);
+    IrSender.sendNEC(BlueGreen, sCommand, sRepeats);
+      delay(500);
+    IrSender.sendNEC(RedGreen, sCommand, sRepeats);
+      delay(500);
        
 
        
@@ -80,20 +94,7 @@ uint8_t sRepeats = 0;
 
     if (digitalRead(SignalWhite) == HIGH){
     delay(debounceDelay);
-    IrSender.sendNEC(White, sCommand, sRepeats);
-    delay(500);
-    IrSender.sendNEC(Red, sCommand, sRepeats);
-      delay(500);
-    IrSender.sendNEC(Blue, sCommand, sRepeats);
-      delay(500);
-    IrSender.sendNEC(Green, sCommand, sRepeats);
-      delay(500);
-    IrSender.sendNEC(RedBlue, sCommand, sRepeats);
-      delay(500);
-    IrSender.sendNEC(BlueGreen, sCommand, sRepeats);
-      delay(500);
-    IrSender.sendNEC(RedGreen, sCommand, sRepeats);
-      delay(500);
+    void Rainbow();
   }
   }
 
