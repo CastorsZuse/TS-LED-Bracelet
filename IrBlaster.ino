@@ -28,7 +28,7 @@ const int IR_SEND_PIN = 5;
 const int debounceDelay = 50;
 int buttonState = 0;   
 
-void Rainbow();
+void Rainbow(){
     IrSender.sendNEC(White, sCommand, sRepeats);
     delay(500);
     IrSender.sendNEC(Red, sCommand, sRepeats);
@@ -43,7 +43,7 @@ void Rainbow();
       delay(500);
     IrSender.sendNEC(RedGreen, sCommand, sRepeats);
       delay(500);
-       
+}
 
        
 void setup() {
